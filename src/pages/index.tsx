@@ -2,7 +2,7 @@ import { useEffect, useMemo } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { Layout } from "../components/Layout";
+import { Container } from "../components/pages/Home";
 import { H1, H2, Span } from "../components/Typography";
 import { ExperienceSection } from "../components/ExperienceSection";
 import { Divider } from "../components/Divider";
@@ -44,7 +44,7 @@ export default function Home() {
         <title>Matheus Santos</title>
       </Head>
 
-      <Layout>
+      <Container>
         <Header />
 
         <H1>Matheus Santos</H1>
@@ -68,7 +68,7 @@ export default function Home() {
         <Media />
 
         <Footer />
-      </Layout>
+      </Container>
     </>
   );
 }
