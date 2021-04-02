@@ -1,0 +1,26 @@
+[
+  {
+    "position": "Engenheiro de Software Front-end",
+    "company": "Intelitrader",
+    "href": "https://www.intelitrader.com.br/",
+    "initialYear": 2020,
+    "finalYear": null,
+    "current": true
+  },
+  {
+    "position": "Desenvolvedor Front-end Freelancer",
+    "company": "SalaDa Criação",
+    "href": null,
+    "initialYear": 2020,
+    "finalYear": 2021,
+    "current": false
+  },
+  {
+    "position": "Jovem Aprendiz",
+    "company": "SESI",
+    "href": "https://www.sesisp.org.br/",
+    "initialYear": 2019,
+    "finalYear": 2020,
+    "current": false
+  }
+]
