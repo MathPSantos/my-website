@@ -3,7 +3,9 @@ import { Content } from "./styles";
 export function Footer() {
   return (
     <Content>
-      <p>© {new Date().getFullYear()} - Todos os direitos reservados</p>
+      <p>
+        {new Date().getFullYear()} © Matheus Santos - Compartilhe conhecimento
+      </p>
     </Content>
   );
 }
