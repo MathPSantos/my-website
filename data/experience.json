@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "position": "Desenvolvedor Front-end",
+      "position": "Desenvolvedor Frontend",
       "company": "Intelitrader",
       "href": "https://www.intelitrader.com.br/",
       "initialYear": 2020,
@@ -9,7 +9,7 @@
       "current": true
     },
     {
-      "position": "Desenvolvedor Front-end Freelancer",
+      "position": "Desenvolvedor Frontend Freelancer",
       "company": "SalaDa Criação",
       "href": null,
       "initialYear": 2020,

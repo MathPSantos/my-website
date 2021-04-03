@@ -50,7 +50,7 @@ export default function Home() {
         <H1>Matheus Santos</H1>
 
         <H2>
-          Desenvolvedor Front-end a mais de 2 anos. Sou apaixonado por
+          Desenvolvedor Frontend a mais de 2 anos. Sou apaixonado por
           desenvolvimento web, design, open-source e desenvolver projetos sem
           compromisso. Atualmente trabalho na <Span>@</Span>
           <a href="https://www.intelitrader.com.br/" target="_blank">
