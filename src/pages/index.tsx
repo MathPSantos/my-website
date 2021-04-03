@@ -1,10 +1,10 @@
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
 import { Container } from "../components/pages/Home";
+import { ExperienceSection } from "../components/pages/Home/ExperienceSection";
 import { H1, H2, Span } from "../components/Typography";
-import { ExperienceSection } from "../components/ExperienceSection";
 import { Divider } from "../components/Divider";
 import { Media } from "../components/Media";
 import { Footer } from "../components/Footer";
@@ -16,15 +16,15 @@ export default function Home() {
   let keysArr = [];
 
   const keymap = {
-    // Blog
-    "m b": "/blog",
+    mb: "/blog",
+    mh: "/",
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
     keysArr.push(event.key);
 
     keysArr.map((key, index, arr) => {
-      const command = keymap[key + " " + arr[index + 1]];
+      const command = keymap[key + arr[index + 1]];
 
       if (command) return router.push(command);
     });

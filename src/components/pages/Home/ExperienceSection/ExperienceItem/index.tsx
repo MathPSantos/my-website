@@ -1,4 +1,4 @@
-import { Span } from "../../Typography/index";
+import { Span } from "../../../../Typography/index";
 
 import { Container } from "./styles";
 

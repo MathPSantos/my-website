@@ -4,7 +4,7 @@ import { ExperienceItem } from "./ExperienceItem";
 
 import { Content, List } from "./styles";
 
-import Experiences from "../../../data/experience.json";
+import { data } from "../../../../../data/experience.json";
 
 interface ExperiencesData {
   position: string;
@@ -16,7 +16,7 @@ interface ExperiencesData {
 }
 
 export function ExperienceSection() {
-  const [experiences] = useState<ExperiencesData[]>(Experiences);
+  const [experiences] = useState<ExperiencesData[]>(data);
 
   return (
     <Content>
