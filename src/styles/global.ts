@@ -33,4 +33,14 @@ export default createGlobalStyle`
       text-decoration: underline;
     }
   }
+
+  ::-moz-selection {
+    color: #272727;
+    background: #FAFAFA;
+  }
+
+  ::selection {
+    color: #272727;
+    background: #FAFAFA;
+  }
 `;
