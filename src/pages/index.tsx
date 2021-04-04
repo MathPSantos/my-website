@@ -23,7 +23,11 @@ export default function Home() {
             Desenvolvedor Frontend a mais de 2 anos. Sou apaixonado por
             desenvolvimento web, design, open-source e desenvolver projetos sem
             compromisso. Atualmente trabalho na{" "}
-            <a href="https://www.intelitrader.com.br/" target="_blank">
+            <a
+              className="foreign"
+              href="https://www.intelitrader.com.br/"
+              target="_blank"
+            >
               Intelitrader
             </a>{" "}
             desenvolvendo o front-end de plataformas para o mercado financeiro.
@@ -38,13 +42,18 @@ export default function Home() {
           <div className={styled.media}>
             <p>
               Veja meus projetos no{" "}
-              <a target="_blank" href="https://github.com/MathPSantos">
+              <a
+                className="foreign"
+                target="_blank"
+                href="https://github.com/MathPSantos"
+              >
                 Github
               </a>
             </p>
             <p>
               Conecte comigo no{" "}
               <a
+                className="foreign"
                 target="_blank"
                 href="https://www.linkedin.com/in/mathpsantos/"
               >

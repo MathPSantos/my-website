@@ -22,7 +22,7 @@ export function ExperienceItem({
       <p>
         {position}
         {href ? (
-          <a href={href} target="_blank">
+          <a className="foreign" href={href} target="_blank">
             {company}
           </a>
         ) : (

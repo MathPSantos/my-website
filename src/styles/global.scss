@@ -67,8 +67,8 @@ a {
     text-decoration: underline;
   }
 
-  &:before {
-    content: "@";
+  &.foreign:before {
+    content: " @";
     filter: brightness(0.8);
   }
 }
