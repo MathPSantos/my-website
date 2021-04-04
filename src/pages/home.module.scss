@@ -9,7 +9,7 @@
     width: 28px;
     height: 4px;
 
-    background: #d3d3d3;
+    background: var(--gray-100);
 
     margin-top: 3rem;
   }
@@ -27,7 +27,7 @@
 
       text-align: left;
 
-      color: #d3d3d3;
+      color: var(--gray-100);
 
       & + p {
         margin-top: 0.75rem;

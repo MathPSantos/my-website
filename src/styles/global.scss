@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --gray-900: #1c1c1c;
+  --gray-800: #272727;
+  --gray-600: #515151;
+  --gray-100: #d3d3d3;
+
+  --white: #fafafa;
+}
+
 @media (max-width: 1000px) {
   html {
     font-size: 93.75%;
@@ -20,8 +29,8 @@ body {
   font: 400 1rem -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  background: #1c1c1c;
-  color: #fafafa;
+  background: var(--gray-900);
+  color: var(--white);
 }
 
 main {
@@ -39,7 +48,7 @@ h1 {
   font-weight: 800;
   font-size: 4.5rem;
 
-  color: #fafafa;
+  color: var(--white);
 }
 
 h2 {
@@ -47,7 +56,7 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
 
-  color: #d3d3d3;
+  color: var(--gray-100);
 }
 
 a {
@@ -65,11 +74,11 @@ a {
 }
 
 ::-moz-selection {
-  color: #272727;
-  background: #fafafa;
+  color: var(--gray-800);
+  background: var(--white);
 }
 
 ::selection {
-  color: #272727;
-  background: #fafafa;
+  color: var(--gray-800);
+  background: var(--white);
 }
