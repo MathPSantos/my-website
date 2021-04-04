@@ -33,7 +33,7 @@ export default function Home() {
 
           <ExperienceSection />
 
-          <div className={styled.divder} />
+          <div className={styled.divider} />
 
           <div className={styled.media}>
             <p>
