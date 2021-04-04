@@ -2,9 +2,9 @@ import { useState } from "react";
 
 import { ExperienceItem } from "./ExperienceItem";
 
-import { Content, List } from "./styles";
+import styled from "./styles.module.scss";
 
-import { data } from "../../../../../data/experience.json";
+import { data } from "../../../data/experience.json";
 
 interface ExperiencesData {
   position: string;
@@ -19,12 +19,12 @@ export function ExperienceSection() {
   const [experiences] = useState<ExperiencesData[]>(data);
 
   return (
-    <Content>
-      <List>
+    <div className={styled.container}>
+      <ul>
         {experiences.map((item, index) => (
           <ExperienceItem key={index} {...item} />
         ))}
-      </List>
-    </Content>
+      </ul>
+    </div>
   );
 }

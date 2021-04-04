@@ -1,11 +1,7 @@
-import { Button } from "./styles";
+import { IconButton } from "../../../IconButton";
 
 import { Command } from "../../../../styles/icons";
 
 export function CommandButton() {
-  return (
-    <Button>
-      <Command />
-    </Button>
-  );
+  return <IconButton icon={Command} />;
 }

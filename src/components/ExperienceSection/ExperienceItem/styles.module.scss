@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-export const Container = styled.li`
+.experienceItem {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -24,4 +22,4 @@ export const Container = styled.li`
 
     color: #d3d3d3;
   }
-`;
+}

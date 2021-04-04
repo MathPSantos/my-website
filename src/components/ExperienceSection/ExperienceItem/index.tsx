@@ -1,6 +1,4 @@
-import { Span } from "../../../../Typography/index";
-
-import { Container } from "./styles";
+import styled from "./styles.module.scss";
 
 interface ExperienceItemProps {
   position: string;
@@ -20,9 +18,9 @@ export function ExperienceItem({
   current = false,
 }: ExperienceItemProps) {
   return (
-    <Container>
+    <li className={styled.experienceItem}>
       <p>
-        {position} <Span>@</Span>
+        {position}
         {href ? (
           <a href={href} target="_blank">
             {company}
@@ -34,6 +32,6 @@ export function ExperienceItem({
       <span>
         {initialYear} - {current ? "Momento" : finalYear}
       </span>
-    </Container>
+    </li>
   );
 }

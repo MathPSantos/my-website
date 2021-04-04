@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { STORAGE_KEY } from "../../../../constants";
 
-import { Button } from "./styles";
+import { IconButton } from "../../../IconButton";
 
 import { Heart } from "../../../../styles/icons";
 
@@ -23,8 +23,10 @@ export function LoveButton() {
   );
 
   return (
-    <Button isLoved={isLoved} onClick={() => setIsLoved(!isLoved)}>
-      <Heart />
-    </Button>
+    <IconButton
+      icon={Heart}
+      isActive={isLoved}
+      onClick={() => setIsLoved(!isLoved)}
+    />
   );
 }

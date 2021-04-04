@@ -1,17 +1,17 @@
 import { CommandButton } from "./Buttons/CommandButton";
 import { LoveButton } from "./Buttons/LoveButton";
-import { Content } from "./styles";
+import styled from "./styles.module.scss";
 
 export function Header() {
   return (
-    <Content>
+    <header className={styled.container}>
       <img src="/image/logo.svg" alt="Matheus Santos" />
 
-      <div className="actions">
+      <div className={styled.actions}>
         <CommandButton />
 
         <LoveButton />
       </div>
-    </Content>
+    </header>
   );
 }

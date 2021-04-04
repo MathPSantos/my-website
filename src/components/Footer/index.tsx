@@ -1,11 +1,11 @@
-import { Content } from "./styles";
+import styled from "./styles.module.scss";
 
 export function Footer() {
   return (
-    <Content>
+    <footer className={styled.container}>
       <p>
         {new Date().getFullYear()} © Matheus Santos - Compartilhe conhecimento
       </p>
-    </Content>
+    </footer>
   );
 }
