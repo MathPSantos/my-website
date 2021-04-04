@@ -31,3 +31,17 @@
     fill: var(--white);
   }
 }
+
+.hide {
+  svg {
+    color: var(--gray-900);
+
+    transition: color 0.2s;
+  }
+
+  &:hover {
+    svg {
+      color: var(--white);
+    }
+  }
+}

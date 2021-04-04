@@ -23,10 +23,8 @@ export function LoveButton() {
   );
 
   return (
-    <IconButton
-      icon={Heart}
-      isActive={isLoved}
-      onClick={() => setIsLoved(!isLoved)}
-    />
+    <IconButton isActive={isLoved} onClick={() => setIsLoved(!isLoved)}>
+      <Heart />
+    </IconButton>
   );
 }
