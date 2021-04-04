@@ -16,5 +16,11 @@
     "link": "/projects",
     "command": "mp",
     "foreign": false
+  },
+  {
+    "label": "?????",
+    "link": "/???",
+    "command": "??",
+    "foreign": false
   }
 ]

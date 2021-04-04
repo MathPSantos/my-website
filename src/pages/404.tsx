@@ -13,7 +13,7 @@ export default function Custom404() {
       <main className={styled.container}>
         <h1>404</h1>
         <h2>
-          Não encontramos nada por aqui... Ir para{" "}
+          We didn't find anything here... Go to{" "}
           <Link href="/">
             <a>home</a>
           </Link>

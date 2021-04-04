@@ -20,9 +20,8 @@ export default function Home() {
           <h1>Matheus Santos</h1>
 
           <h2>
-            Desenvolvedor Frontend a mais de 2 anos. Sou apaixonado por
-            desenvolvimento web, design, open-source e desenvolver projetos sem
-            compromisso. Atualmente trabalho na{" "}
+            Frontend Developer for over than 2 years. Passionate about web
+            development, design and open-source projects. Nowadays I work ate{" "}
             <a
               className="foreign"
               href="https://www.intelitrader.com.br/"
@@ -30,9 +29,9 @@ export default function Home() {
             >
               Intelitrader
             </a>{" "}
-            desenvolvendo o front-end de plataformas para o mercado financeiro.
-            Já por fora do trabalho, desenvolvo projetos próprios, além de
-            jogar, escutar música e pensar sobre o mundo.
+            developing platforms for financial market. Out of work, I develop my
+            own projects, in addition to play games, listen to music and think
+            about the world.
           </h2>
 
           <ExperienceSection />
@@ -41,7 +40,7 @@ export default function Home() {
 
           <div className={styled.media}>
             <p>
-              Veja meus projetos no{" "}
+              See my projects on{" "}
               <a
                 className="foreign"
                 target="_blank"
@@ -51,7 +50,7 @@ export default function Home() {
               </a>
             </p>
             <p>
-              Conecte comigo no{" "}
+              Conect with me on{" "}
               <a
                 className="foreign"
                 target="_blank"

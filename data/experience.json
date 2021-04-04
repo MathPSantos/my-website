@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "position": "Desenvolvedor Frontend",
+      "position": "Frontend Developer",
       "company": "Intelitrader",
       "href": "https://www.intelitrader.com.br/",
       "initialYear": 2020,
@@ -9,7 +9,7 @@
       "current": true
     },
     {
-      "position": "Desenvolvedor Frontend Freelancer",
+      "position": "Freelancer Frontend Developer",
       "company": " SalaDa Criação",
       "href": null,
       "initialYear": 2020,
@@ -17,7 +17,7 @@
       "current": false
     },
     {
-      "position": "Jovem Aprendiz",
+      "position": "Young Apprentice",
       "company": "SESI",
       "href": "https://www.sesisp.org.br/",
       "initialYear": 2019,
