@@ -1,4 +1,10 @@
-import { useEffect, createContext, ReactNode } from "react";
+import {
+  useEffect,
+  useState,
+  createContext,
+  ReactNode,
+  useContext,
+} from "react";
 import { useRouter } from "next/router";
 
 import keysRoutes from "../../data/keyRoutes.json";
@@ -7,10 +13,19 @@ interface CommandProviderProps {
   children: ReactNode;
 }
 
-export const CommandContext = createContext({});
+interface CommandContextData {
+  isCommandMenuOpen: boolean;
+  toggleCommandMenuOpen: (value: boolean) => void;
+}
+
+const CommandContext = createContext<CommandContextData>(
+  {} as CommandContextData
+);
 
 export function CommandProvider({ children }: CommandProviderProps) {
   const router = useRouter();
+
+  const [isCommandMenuOpen, setIsCommandMenuOpen] = useState(false);
 
   let keysArr = [];
 
@@ -32,7 +47,21 @@ export function CommandProvider({ children }: CommandProviderProps) {
     };
   }, []);
 
+  function toggleCommandMenuOpen(value: boolean) {
+    setIsCommandMenuOpen(value);
+  }
+
   return (
-    <CommandContext.Provider value={{}}>{children}</CommandContext.Provider>
+    <CommandContext.Provider
+      value={{ isCommandMenuOpen, toggleCommandMenuOpen }}
+    >
+      {children}
+    </CommandContext.Provider>
   );
+}
+
+export function useCommand() {
+  const context = useContext(CommandContext);
+
+  return context;
 }
