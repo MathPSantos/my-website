@@ -32,10 +32,13 @@ export function CommandProvider({ children }: CommandProviderProps) {
   function handleKeyDown(event: KeyboardEvent) {
     keysArr.push(event.key);
 
-    keysArr.map((key, index, arr) => {
-      const command = keysRoutes[key + arr[index + 1]];
+    if (keysArr.length < 2) return;
 
-      if (command) return router.push(command);
+    const arrLength = keysArr.length;
+    const userCommand = `${keysArr[arrLength - 2]}${keysArr[arrLength - 1]}`;
+
+    keysRoutes.map((item) => {
+      if (item.command === userCommand) router.push(item.link);
     });
   }
 

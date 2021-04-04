@@ -1,4 +1,20 @@
-{
-  "mh": "/",
-  "mb": "/blog"
-}
+[
+  {
+    "label": "Home",
+    "link": "/",
+    "command": "mh",
+    "foreign": false
+  },
+  {
+    "label": "Blog",
+    "link": "/blog",
+    "command": "mb",
+    "foreign": false
+  },
+  {
+    "label": "Projects",
+    "link": "/projects",
+    "command": "mp",
+    "foreign": false
+  }
+]
