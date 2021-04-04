@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
 import { Container } from "../components/pages/Home";
 import { ExperienceSection } from "../components/pages/Home/ExperienceSection";
@@ -11,33 +9,6 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
 export default function Home() {
-  const router = useRouter();
-
-  let keysArr = [];
-
-  const keymap = {
-    mb: "/blog",
-    mh: "/",
-  };
-
-  const handleKeyDown = (event: KeyboardEvent) => {
-    keysArr.push(event.key);
-
-    keysArr.map((key, index, arr) => {
-      const command = keymap[key + arr[index + 1]];
-
-      if (command) return router.push(command);
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
-
   return (
     <>
       <Head>
