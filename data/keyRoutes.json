@@ -6,6 +6,12 @@
     "foreign": false
   },
   {
+    "label": "Bookmarks",
+    "link": "/bookmarks",
+    "command": "mk",
+    "foreign": false
+  },
+  {
     "label": "Blog",
     "link": "/blog",
     "command": "mb",
