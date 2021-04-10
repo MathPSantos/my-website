@@ -26,11 +26,11 @@ export function ExperienceItem({
             {company}
           </a>
         ) : (
-          `${company}`
+          { company }
         )}
       </p>
       <span>
-        {initialYear} - {current ? "Momento" : finalYear}
+        {initialYear} - {current ? "Current" : finalYear}
       </span>
     </li>
   );
