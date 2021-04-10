@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { useCommand } from "../../../hook/useCommand";
 import styled from "./styles.module.scss";
 
 interface CommandItemProps {
@@ -14,11 +15,13 @@ export function CommandItem({
   foreign = false,
   command = [],
 }: CommandItemProps) {
+  const { toggleCommandMenuOpen } = useCommand();
   const route = useRouter();
 
   function handlePushLink() {
     if (!foreign) {
       route.push(link);
+      toggleCommandMenuOpen(false);
     } else {
       window.open(link, "_blank").focus();
     }
