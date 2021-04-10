@@ -21,7 +21,7 @@ export default function Home() {
 
           <h2>
             Frontend Developer for over than 2 years. Passionate about web
-            development, design and open-source projects. Nowadays I work ate{" "}
+            development, design and open-source projects. Nowadays I work at{" "}
             <a
               className="foreign"
               href="https://www.intelitrader.com.br/"
