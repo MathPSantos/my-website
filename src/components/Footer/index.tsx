@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className={styled.container}>
       <p>
-        {new Date().getFullYear()} © Matheus Santos - Compartilhe conhecimento
+        {new Date().getFullYear()} © Matheus Santos - Share knowledge 
       </p>
     </footer>
   );
