@@ -25,9 +25,7 @@ export function ExperienceItem({
           <a className="foreign" href={href} target="_blank">
             {company}
           </a>
-        ) : (
-          { company }
-        )}
+        ) : company}
       </p>
       <span>
         {initialYear} - {current ? "Current" : finalYear}
